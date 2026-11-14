@@ -6,7 +6,7 @@
 // You should call this function a number of times to check it works for different inputs
 
 function toPounds(penceString) {
-    if (!isPenceString(penceString)) throw new Error("It is not a pence string");
+    if (!isPenceString(penceString)) return "invalid input";
     const penceStringWithoutTrailingP = penceString.substring(
         0,
         penceString.length - 1
